@@ -17,25 +17,238 @@
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    How many team members can I invite? You can invite up to 2 additional users
-    on the Free plan. There is no limit on team members for the Premium plan.
-    What is the maximum file upload size? No more than 2GB. All files in your
-    account must fit your allotted storage space. How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your
-    profile page. A reset link will be emailed to you. Can I cancel my
-    subscription? Yes! Send us a message and we’ll process your request no
-    questions asked. Do you provide additional support? Chat and email support
-    is available 24/7. Phone lines are open during normal business hours.
+  <body class="w-screen h-screen bg-gradient-to-b from-softViolet to-softBlue">
+    <main class="h-[98%]">
+      <div class="flex w-full h-full container items-center justify-center">
+        <div
+          class="flex pr-6 pt-0 pb-6 rounded-lg shadow-lg bg-white w-4/6 h-auto md:h-4/6 md:pt-6"
+        >
+          <div class="flex flex-col md:flex-row items-center justify-center">
+            <!-- Image -->
+            <div
+              class="w-1/2 bg-bgPatternMobile md:bg-bgPatternDesktop bg-contain h-full flex items-center justify-items-start object-left mr-6 pb-6 md:pb-0"
+            >
+              <img
+                class="w-full"
+                src="images/illustration-woman-online-desktop.svg"
+                alt=""
+              />
+            </div>
+            <!-- Accordion -->
+            <div
+              class="w-full md:w-1/2 h-full flex items-center justify-center"
+            >
+              <div class="w-full justify-center items-center">
+                <div
+                  class="border-t-0 border-l-0 border-r-0 rounded-none border border-gray-200"
+                >
+                  <h2 class="mb-0">
+                    <button
+                      class="relative flex items-center w-full py-4 px-5 text-base text-gray-800 font-bold text-left bg-white border-0 rounded-none transition focus:outline-none justify-between"
+                      type="button"
+                      id="flush-headingOne"
+                    >
+                      How many team members can I invite?
+                      <span class="arrow-down">
+                        <svg
+                          width="10"
+                          height="7"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 .799l4 4 4-4"
+                            stroke="#F47B56"
+                            stroke-width="2"
+                            fill="none"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse border-0"
+                  >
+                    <div class="py-4 px-5">
+                      You can invite up to 2 additional users on the Free plan.
+                      There is no limit on team members for the Premium plan.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200"
+                >
+                  <h2 class="accordion-header mb-0">
+                    <button
+                      class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none justify-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                      id="flush-headingTwo"
+                    >
+                      What is the maximum file upload size?
+                      <span class="arrow-down">
+                        <svg
+                          width="10"
+                          height="7"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 .799l4 4 4-4"
+                            stroke="#F47B56"
+                            stroke-width="2"
+                            fill="none"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse border-0 hidden"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body py-4 px-5">
+                      No more than 2GB. All files in your account must fit your
+                      allotted storage space.
+                    </div>
+                  </div>
+                </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+                <div
+                  class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200"
+                >
+                  <h2 class="accordion-header mb-0">
+                    <button
+                      class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none justify-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                      id="flush-headingThree"
+                    >
+                      How do I reset my password?
+                      <span class="arrow-down">
+                        <svg
+                          width="10"
+                          height="7"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 .799l4 4 4-4"
+                            stroke="#F47B56"
+                            stroke-width="2"
+                            fill="none"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse hidden"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body py-4 px-5">
+                      Click “Forgot password” from the login page or “Change
+                      password” from your profile page. A reset link will be
+                      emailed to you.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200"
+                >
+                  <h2 class="accordion-header mb-0">
+                    <button
+                      class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none justify-between"
+                      type="button"
+                      id="flush-headingFour"
+                    >
+                      Can I cancel my subscription?
+                      <span class="arrow-down">
+                        <svg
+                          width="10"
+                          height="7"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 .799l4 4 4-4"
+                            stroke="#F47B56"
+                            stroke-width="2"
+                            fill="none"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="hidden">
+                    <div class="py-4 px-5">
+                      Yes! Send us a message and we’ll process your request no
+                      questions asked.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200"
+                >
+                  <h2 class="mb-0">
+                    <button
+                      class="relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none justify-between"
+                      type="button"
+                      id="flush-headingFive"
+                    >
+                      Do you provide additional support?
+                      <span class="arrow-down">
+                        <svg
+                          width="10"
+                          height="7"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 .799l4 4 4-4"
+                            stroke="#F47B56"
+                            stroke-width="2"
+                            fill="none"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="hidden">
+                    <div class="py-4 px-5">
+                      Chat and email support is available 24/7. Phone lines are
+                      open during normal business hours.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Bethanie Innes</a>.
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
